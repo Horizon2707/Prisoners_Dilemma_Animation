@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #f5f5f5;
+  --accent-color: #0f4b5c;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: var(--secondary-color);
+  min-height: 100vh;
+  font-family: var(--font-family);
+}
+
+.flexContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.playerListScrollable {
+  flex: 1.2;
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.playerListScrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.playerListScrollable::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+.playerButton {
+  display: block;
+  width: 100%;
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.playerButton:hover {
+  background: var(--accent-color);
+}
+
+.playerDetailsStatic {
+  flex: 3;
+  padding: 2rem;
+  background: #333;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerDetailsContent {
+  max-width: 600px;
+  text-align: center;
+}
+
+.playerImage {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: white;
+}

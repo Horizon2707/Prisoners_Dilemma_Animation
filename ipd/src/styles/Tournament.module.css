@@ -1,0 +1,33 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 59, 59);
+}
+.cardHolder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;  
+}
+.corousel{
+    max-width: 10vw;
+    max-height: 40vh;
+}
+.multipleCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
+  }
+  .card {
+    flex: 1 1 calc(50% - 32px); /* Adjust the percentage as needed */
+    max-width: calc(50% - 32px); /* Adjust the percentage as needed */
+    box-sizing: border-box;
+  }

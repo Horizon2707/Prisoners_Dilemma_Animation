@@ -1,1 +1,47 @@
+:root{
+  --btn-color : #ffffff;
+  --btn-background : #ffffff;
+}
 
+.main{
+    width:100%;
+    height:100%;
+    z-index:0;
+    overflow: hidden;
+  }
+ .container{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 20vh;
+    gap: 8vh;
+    
+  }
+  .title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(15, 75, 92, 0.8);
+  }
+  
+  p{
+    font-size: 1.2rem;
+    color: rgb(15, 75, 92, 0.8);
+  }
+.title-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.menu-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  
+}

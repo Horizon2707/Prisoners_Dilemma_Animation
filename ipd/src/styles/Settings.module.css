@@ -1,0 +1,66 @@
+.settingsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 2rem;
+  background: #f5f1d7;
+  background-image: linear-gradient(90deg, #f5f1d7 1px, transparent 1px),
+    linear-gradient(#f5f1d7 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: #333;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.settingsTitle {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.settingsMenu {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.menuItem {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menuItem:hover {
+  background: rgba(50, 140, 160, 0.8);
+  color: white;
+  transform: translateX(5px);
+}
+
+.menuItemActive {
+  background: rgba(15, 75, 92, 0.8);
+  color: white;
+  font-weight: bold;
+}
+
+.instructions {
+  padding: 1rem;
+  background: #e0dcb5;
+  width: 100%;
+  text-align: left;
+}
+
+.keyHints {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.keyHints span {
+  background: #333;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}

@@ -1,0 +1,53 @@
+.button-css{
+    position:relative;
+    width:17vw;
+    color : #000000;
+    background-color: #ffffff;
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    padding: 12px ;
+    border: 2px solid rgb(0, 0, 0);
+    /* border-radius: 1vh; */
+    justify-content: center;
+    overflow:hidden;
+    /* transition-property: all;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out; */
+    cursor:pointer;
+    z-index: 5;
+}
+.button-css:after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    transition: width .4s ease;
+    opacity: 1;
+    z-index: -1;    
+}
+.button-css:hover::after{
+    width: 100%;
+    
+}
+.button-css:hover{
+    color:white;
+}
+
+
+.button-css:hover{
+    /* color: rgb(255, 255, 255, 1);
+    background-color: #06323c;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(63, 32, 32, 0.5); */
+}
+
+.button-css:active{
+    color: rgb(255, 255, 255, 1);
+    background-color: #06323c;
+    border-color: rgb(255, 255, 255);
+    transform: scale(0.95);
+}

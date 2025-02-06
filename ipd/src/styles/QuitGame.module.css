@@ -1,0 +1,41 @@
+.quitContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #0f4b5c, #102027);
+  color: white;
+  text-align: center;
+}
+
+.message {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fdd835;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.quitButton {
+  background-color: #d32f2f;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.quitButton:hover {
+  background-color: #b71c1c;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
