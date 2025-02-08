@@ -64,10 +64,21 @@
   flex: 3;
   padding: 2rem;
   background: #333;
-  overflow-y: hidden;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.playerDetailsStatic::-webkit-scrollbar {
+  width: 8px;
+}
+
+.playerDetailsStatic::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 4px;
 }
 
 .playerDetailsContent {
@@ -84,5 +95,9 @@
 
 h2 {
   margin-bottom: 1rem;
+  color: white;
+}
+
+p {
   color: white;
 }

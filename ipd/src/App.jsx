@@ -35,7 +35,7 @@ function App() {
         <div className="container">
           <div className="title-container">
             <h1 className="title">Strategic Showdown</h1>
-            <p>A Prisoner's Dilemma Simulator</p>
+            <p className="para">A Prisoner's Dilemma Simulator</p>
           </div>
           <div className="menu-buttons">
             <Button text={"Quick Match"} routeTo={"quick-match"} />
