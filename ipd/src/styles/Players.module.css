@@ -64,12 +64,11 @@
   flex: 3;
   padding: 2rem;
   background: #333;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow-y: auto;
   max-height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .playerDetailsStatic::-webkit-scrollbar {
@@ -81,16 +80,26 @@
   border-radius: 4px;
 }
 
+.playerDetailsStatic::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .playerDetailsContent {
   max-width: 600px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Ensure it takes full width */
 }
 
 .playerImage {
   width: 100%;
   max-width: 400px;
+  height: auto;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  object-fit: contain;
 }
 
 h2 {
@@ -100,4 +109,22 @@ h2 {
 
 p {
   color: white;
+}
+
+.strategySection {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%; /* Ensure it takes full width */
+}
+
+.strategySection h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.strategySection p {
+  color: white;
+  line-height: 1.6;
 }

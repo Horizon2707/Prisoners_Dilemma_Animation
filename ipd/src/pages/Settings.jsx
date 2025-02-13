@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/Settings.module.css";
 
-const menuOptions = ["Language", "Game", "Camera", "Screen", "Sound", "Other"];
+const menuOptions = ["Theme", "Game Rules", "Visualization & Animation", "Display Settings", "Sound Settings", "Other"];
 
 function Settings() {
   const [selectedOption, setSelectedOption] = useState(0);
@@ -42,13 +42,13 @@ function Settings() {
           </div>
         ))}
       </div>
-      <div className={styles.instructions}>
+      {/* <div className={styles.instructions}>
         <p>Adjust {menuOptions[selectedOption].toLowerCase()} settings.</p>
         <div className={styles.keyHints}>
           <span>W</span> Move Up <span>S</span> Move Down <span>Enter</span>{" "}
           Confirm <span>Esc</span> Back
         </div>
-      </div>
+      </div>*/}
     </div>
   );
 }
